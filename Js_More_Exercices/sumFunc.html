@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<script>
+    //the reduce function works by reducing the array into a single number.
+    //then we specify the patterns in wich the reducing will produce a result.
+    // that result is the fruit of the pattern and a starting point.
+    
+    var numbers = [1, 2, 4];
+    document.write("Numbers to sum: "+numbers);
+
+    function sumNum(total, num){
+        return total + Math.round(num);
+    }
+    document.write("</br>The sum result is: "+numbers.reduce(sumNum, 0));
+
+    function multNum(total, num){
+        return total * Math.round(num);
+    }
+    document.write("</br>The multiplication result is: "+numbers.reduce(multNum, 1));
+
+</script> 
+ 
+</body>
+</html>

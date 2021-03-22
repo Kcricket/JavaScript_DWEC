@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var string = "Hello im dragos";
+        document.write("Current string: "+string+"</br>");
+
+       function invertString(string){
+           split = string.split("");
+           document.write("</br>First we split the string:</br> "+split+"</br>");
+
+           reversed = split.reverse();
+           document.write("</br>Then we reverse the elements:</br> "+reversed+"</br>");
+
+           concat = reversed.join("");
+           document.write("</br>Finally we just join():</br> "+concat+"</br>");
+
+
+       }
+       invertString(string);
+    </script>
+</body>
+</html>
