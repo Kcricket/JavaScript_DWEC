@@ -1,6 +1,6 @@
 function createParagraph(){
     var p = document.createElement("p");
-    p.innerHTML = "Hola weno dias </br> Hola wenas tardes"
+    p.innerHTML = "This is an appended Child </br>"
     document.getElementById("content").appendChild(p);
 }
 //we use window onload to make the function execute after the html loaded
@@ -27,11 +27,12 @@ var killChild = () =>{
     }, 3000);
 }; 
 
-function replaceChild(){
+function childExchange(){
     var oldNode= document.querySelector('#content').childNodes[0];
-    var node = createElement('p');
-    var papa = getElementById('content');
-    var nodeReplaced = papa.replaceChild()
+    var node = document.createElement("p");
+    node.innerHTML = "This is the exchanged text";
+    var papa = document.getElementById('content');
+    var nodeReplaced = papa.replaceChild(node, oldNode);
 }
 
 window.onload =()=>{

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Divs</title>
+    <script src="itemRequest.js"></script>
+    <style>
+        body{
+            
+            display: grid;
+            grid-template-columns: 50% 50%;      
+            grid-template-rows: auto; 
+            grid-template-areas:
+                "div div"
+                "div div"
+        }
+        .xdiv{
+            background-color: aquamarine;
+            height: 200px;
+            margin: 10px;
+            padding: 30px;
+            
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div id="xdiv1" onmouseover="saySo1()" class="xdiv">Roll on me and ill tell you somethin</br><p id="xp"></p></div>
+    <div id="xdiv1" onmouseover="saySo2()" class="xdiv">Roll on me and ill tell you somethin</br><p id="xp2"></p></div>
+    <div id="xdiv1" onmouseover="saySo3()" class="xdiv">Roll on me and ill tell you somethin</br><p id="xp3"></p></div>
+    <div id="xdiv1" onmouseover="saySo4()" class="xdiv">Roll on me and ill tell you somethin</br><p id="xp4"></p></div>
+</body>
+</html>

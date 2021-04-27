@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Boxes</title>
+    <script src="domBoxesAlert.js"></script>
+    <style>
+        div{ border:1px solid black;
+
+            width:49.5%;
+
+            display: inline-block;
+
+            text-align: center;
+
+            padding-top: 15%;
+
+            height:25.5%;
+
+            border-radius: 15%;
+            
+            background-color:lightblue;
+
+        }
+        body, html { height:100%;
+            margin:1;
+
+            padding:1;
+
+            width:100%;
+
+            background-color:silver;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1" onclick="pickAndSay1()"><p>Click on me</p></div>
+    <div class="box2" onclick="pickAndSay2()"><p>Click on me</p></div>
+    <div class="box3" onclick="pickAndSay3()"><p>Click on me</p></div>
+    <div class="box4" onclick="pickAndSay4()"><p>Click on me</p></div>
+
+</body>
+</html>

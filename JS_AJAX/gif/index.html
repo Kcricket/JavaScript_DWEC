@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Gif</title>
+    <script src="ajaxrqGif.js"></script>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #container{
+            margin-top: 20%;
+            height: 100px;
+            width: 100px;
+            /* background-color: aquamarine; */
+        }
+        img{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="loadDoc()">Click to send request</button>
+    <div id="container1">
+        <p id="pcontainer1">Hola</p>
+    </div>
+    <div id="container2">
+        <img id= "gif" src="loading.gif" alt="loading..">
+    </div>
+   
+
+</body>
+</html>
