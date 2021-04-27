@@ -1,5 +1,4 @@
-function pickAndSay1(){
-    
+function pickAndSay1(){z
     var oldNode= document.querySelector(".box1").childNodes[0];
     var node = document.createElement("p");
     node.innerHTML = "This text has been exchanged in the left-top div";
