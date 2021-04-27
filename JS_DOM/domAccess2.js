@@ -10,7 +10,7 @@ function createParagraph(){
 function addChildBeforeNode(){
     var p = document.createElement("p");
     //In order to create something in a parent, regarding a relation with certain child,
-    //We are going to need to acceed to that parent and to its children tith 'childNodes[]'
+    //We are going to need to acceed to that parent and to its children tith 'childNodes[] '
     var p2 = document.querySelector('#content').childNodes[2];
     p.innerHTML = "Elemento Antes de Elemento DESAPEARS IN 3 SECONS!"
     var p2Parent = p2.parentNode;
